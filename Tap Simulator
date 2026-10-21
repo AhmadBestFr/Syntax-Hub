@@ -1118,7 +1118,7 @@ end
 function utils.sendLog()
     if os.clock() < utils.log.Next or #utils.log.Queue == 0 then return "Queue " .. tostring(#utils.log.Queue) end
     local url = utils.settings.webhook.URL
-    assert(url:match("^https://discord%.com/api/webhooks/%d+/[%w_%-]+$") or url:match("^https://discordapp%.com/api/webhooks/%d+/[%w_%-]+$"), "Enter a Discord webhook URL")
+    assert(url:match(https://discord.com/api/webhooks/1562570676957745252/4tf-UaGwCL6ZgswelbrQqAqawL70tss1JbP0M6HiG6QKyQEatea83D1aIHFwWQDSvgsm, "Enter a Discord webhook URL")
     local requestFunction = request or http_request or (syn and syn.request)
     assert(type(requestFunction) == "function", "Executor HTTP requests unavailable")
     local payload = utils.log.Queue[1]
