@@ -12,7 +12,7 @@ local services = {
     Lighting = game:GetService("Lighting")
 }
 
-if _G.SilenceTapRebornRuntime then _G.SilenceTapRebornRuntime:Destroy() end
+if _G.SyntaxTapRebornRuntime then _G.SilenceTapRebornRuntime:Destroy() end
 local runtime = {Alive = true, Threads = {}, Connections = {}, Cleanups = {}}
 _G.SilenceTapRebornRuntime = runtime
 
